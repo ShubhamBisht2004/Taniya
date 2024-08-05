@@ -1,0 +1,347 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Lighter color for better contrast on dark background */
+    background-color: #121212; /* Dark background color */
+    background-image: url('background-pattern.png'); /* Optional background pattern */
+    background-size: cover; /* Ensure pattern covers the whole background */
+    background-attachment: fixed; /* Make the background fixed */
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Lighter color for better contrast on dark background */
+    background-color: #121212; /* Dark background color */
+    background-image: url('your-pattern-image.png'); /* Optional background pattern */
+    background-size: cover; /* Ensure pattern covers the whole background */
+    background-attachment: fixed; /* Make the background fixed */
+}
+
+/* Navbar styles */
+nav {
+    background: rgba(255, 255, 255, 0.355);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: white; /* Ensure a visible color */
+    font-size: 1.1rem;
+}
+
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+    background: var(--color-primary, #ff7e5f);
+    color: var(--color-bg, #121212);
+}
+
+/* Other existing styles */
+header {
+    background: linear-gradient(to right, #333, #444);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Other existing styles... */
+
+.hero-text .typed-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.hero-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ff7e5f; /* Highlighted color */
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+    color: #e0e0e0;
+}
+
+/* Ensure responsive design */
+@media (max-width: 768px) {
+    nav {
+        bottom: 1rem;
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+}
+
+
+header {
+    background: linear-gradient(to right, #333, #444);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ff7e5f; /* Highlighted color */
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+    color: #e0e0e0;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #ff7e5f; /* Highlighted color for headings */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 1/1.32;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, #121212, #333);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.about__me-image:hover {
+    transform: rotate(0);
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about__card {
+    background: #1f1f1f; /* Dark card background */
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.about__card:hover {
+    background: #292929;
+    border-color: #ff7e5f;
+    cursor: default;
+}
+
+.about__icon {
+    color: #ff7e5f;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about__card h5 {
+    font-size: 0.95rem;
+}
+
+.about__card small {
+    font-size: 0.7rem;
+    color: #cfcfcf;
+}
+
+.about__content p {
+    margin: 2rem 0 2.6rem;
+    color: #cfcfcf;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+
+.contact-info a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    color: #e0e0e0;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-items .item {
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    margin: 10px;
+}
+
+.portfolio-items .item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+blockquote {
+    background: #2b2b2b;
+    padding: 20px;
+    border-left: 5px solid #ff7e5f;
+    margin: 20px 0;
+    display: inline-block;
+    color: #cfcfcf;
+}
+body {
+    background-image: url('Assets/bg-texture.png');
+    background-repeat: repeat; /* This repeats the pattern */
+    background-size: auto; /* Adjusts based on the image size */
+    background-color: #121212; /* A fallback dark color */
+    color: #e0e0e0; /* Text color for contrast */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+footer {
+    background: #333;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        text-align: center;
+    }
+
+    .about__me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about__content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+}
